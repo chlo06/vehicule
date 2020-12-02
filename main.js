@@ -1,6 +1,6 @@
 class vehicule{
 
-    constructor(){
+    constructor(immat, carColor, weight, power, tank, places){
 
     this.immat = immat;
     this.carColor = carColor;
@@ -10,13 +10,15 @@ class vehicule{
     this.places = places;
     }  
 
-repeindre (color2){
-
-if (color2 === carColor){
+repeindre (newColor) {
+if (newColor === this.carColor){
     console.log ('Thanks for the refreshment')
 }  else{
-    this.carColor = color2;
-    console.log ('Great choice thanks')
+    this.carColor = newColor;
+    console.log (newColor + ' ' + 'Great choice thanks')
       }
 }
 }
+let car1 = new vehicule ("CF501MM" , "pink" , 1500 , 110 , 10.0 , 5)
+console.log(car1)
+car1.repeindre("green")
