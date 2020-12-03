@@ -20,19 +20,19 @@ if (this.insurance = true)  {
 
 repeindre (newColor) {
    if (newColor === this.color){
-    console.log ('Thanks for the refreshment')
+    return ('Thanks for the refreshment')
 }  else{
     this.color = newColor;
-    console.log (newColor + ' ' + 'Great choice thanks')
+    return (newColor + ' ' + 'Great choice thanks')
     }
    }
 
 mettreEssence (addGas) {
     if ((addGas + this.gas) <= this.tank){
      this.gas += addGas
-     console.log('Your tank containt now ' + this.gas);
+     return ('Your tank containt now ' + this.gas);
 }   else{
-    console.log('Not possible too much gas add');
+    return ('Not possible too much gas add');
      }
  }
 
@@ -51,9 +51,9 @@ seDeplacer(distance , speed) {
     this.gasTrip= ((distance * 12)/100);
    }
    if (this.gas >= this.gasTrip){
-       console.log('You can do this'+ ' ' + this.gasTrip +'L' + ' '+  'be consumed for this trip ');
+       return ('You can do this'+ ' ' + this.gasTrip +'L' + ' '+  'be consumed for this trip ');
    } else {
-       console.log('No possible gas too low ');
+       return ('No possible gas too low ');
    }
   }
 
