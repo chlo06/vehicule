@@ -14,7 +14,6 @@ class Voiture{
 }
 addInsurance (newInsurance){
     if (newInsurance === this.insurance) {
-        this.boardMessage = 'You dont have any insurance cannot take the road like that'
         return this.boardMessage
     } else {
         this.insurance = newInsurance
