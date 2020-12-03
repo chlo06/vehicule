@@ -15,9 +15,9 @@ class Voiture {
 addInsurance (newInsurance){
     if (newInsurance === this.insurance) {
         this.boardMessage = 'You dont have any insurance cannot take the road like that'
-        } else {
-            this.insurance = newInsurance
-            this.boardMessage = 'Great you have now an insurance ! Enjoy'
+    } else {
+        this.insurance = newInsurance
+        this.boardMessage = 'Great you have now an insurance ! Enjoy'
         }
     }
 repeindre (newColor) {
